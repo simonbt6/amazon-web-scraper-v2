@@ -3,11 +3,12 @@ from mysql.connector.cursor import MySQLCursor
 from product import Product
 import mysql
 class Database:
-
-    hostname = "149.28.37.80"
-    username = "store_admin"
-    password = "_f3J)QqZ)MXp7~6"
-    database = "StoreAPI"
+    
+    # TODO: .ENV 
+    hostname = ""
+    username = ""
+    password = ""
+    database = ""
     
     def __init__(self):
         self.connection = mysql.connector.connect(host=self.hostname, user=self.username, password=self.password, database=self.database)
